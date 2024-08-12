@@ -1,0 +1,156 @@
+@media screen and (max-width: 600px) {
+    .skills .container {
+        margin: 5px 0 0 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .education .timeline {
+        margin-top: 2rem;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .container {
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+
+    .education .container::after {
+        font-size: 2.2rem;
+    }
+
+    .education .container::before {
+        left: 61px;
+        border: medium solid var(--main-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--main-color) transparent transparent;
+    }
+
+    .education .left::after {
+        left: 15px;
+    }
+
+    .education .right::after {
+        left: 15px;
+    }
+
+    .education .right {
+        left: 0%;
+    }
+
+    .contact .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .container .row {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:895px) {
+    .services .service-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:991px) {
+    .services {
+        padding-bottom: 7rem;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 5rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width:995px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-bottom: 3px solid var(--main-color);
+        border-left: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 2rem;
+    }
+}
+@media (max-width: 1285px){
+    html{
+        font-size: 55%;
+    }
+    .service-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem;
+    }
+}
